@@ -238,7 +238,7 @@ you like, imagine or require.
 
 [ Bugs ]
 
-Currently in BETA however appliction is mostly stable but will
+BETA stage however application is mostly stable and will
 require crash testing to make more stable by finding issues as
 they arise, are found.
 
