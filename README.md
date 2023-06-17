@@ -3,6 +3,9 @@ Detectionator (Object Detection Studio using ImageAI)
 
 Object Detection Studio leverages a highly modified and upgraded version of the original ImageAI to facilitate image
 detection in videos and live camera feeds. Detection, auto-annotation, manual annotation, training.
+Teach it what anything is even aliens and UAPs and setup corresponding target events.
+
+Download: https://drive.google.com/drive/folders/1wAuqcOAUPCxYI9UWFH4erdGI21U_LVY6?usp=sharing
 
 
 [ Camera ]
@@ -220,3 +223,7 @@ detection in videos and live camera feeds. Detection, auto-annotation, manual an
     Although this software uses a highly modified and upgraded ImageAI it is thanks to ImageAI that this
     software exists at all and my mods/upgrades are simple in comparison and exist only to allow for more
     functionality in specific areas of ImageAI.
+    All rights reserved however source code may be available on request however not many things auto-annotate
+    and if they do they cost money and i really need money.
+
+    paypal: benjaminjc173@gmail.com :)
