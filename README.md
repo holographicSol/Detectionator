@@ -34,7 +34,7 @@ Download: https://drive.google.com/drive/folders/1wAuqcOAUPCxYI9UWFH4erdGI21U_LV
 
     Be sure to set the save location to the annotation directory for the image directory being annotated.
 
-![plot](./Detectionator/tree/main/Screenshots/Annotate2.png)
+![plot](./Screenshots/Annotate2.png)
 
 
 [ Training ]
