@@ -92,9 +92,7 @@ Directory containing dataset should be in the following structure:
                 validation
                      |--------------> images
 
-Train from scratch.
-Train from pre-trained model.
-Select a dataset and hit train.
+Train from scratch or train from pre-trained model, select a dataset and hit train.
 
 -----
 
