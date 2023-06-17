@@ -1,5 +1,6 @@
 Detectionator (Object Detection Studio using ImageAI)
 
+-----
 
 Detectionator is an Object Detection Studio for ImageAI, using a highly modified
 version of the original ImageAI.
@@ -11,8 +12,13 @@ can be triggered upon target detection using YOLOv3 or a custom model.
 Detection, auto-annotation, manual annotation, training. Teach it what anything
 is, even aliens and UAPs and setup corresponding target events.
 
-Download: https://drive.google.com/drive/folders/1wAuqcOAUPCxYI9UWFH4erdGI21U_LVY6?usp=sharing
+-----
 
+Download:
+
+    https://drive.google.com/drive/folders/1wAuqcOAUPCxYI9UWFH4erdGI21U_LVY6?usp=sharing
+
+-----
 
 [ Camera ]
 
@@ -21,6 +27,7 @@ Target detection with half a million fully programmable target events for
 infinitely specified targets.
 Created data-sets can be used for further mannual annotation and training.
 
+-----
 
 [ Video ]
 
@@ -29,6 +36,7 @@ that can be used for further mannual annotation and training.
 
 ![plot](./Screenshots/Video2.png)
 
+-----
 
 [ Annotation ]
 
@@ -54,6 +62,7 @@ for the image directory being annotated.
 Existing auto/previously annotated objects can be renamed or removed entirely and new
 objects can be annotated too.
 
+-----
 
 [ Training ]
 
@@ -87,6 +96,8 @@ Train from scratch.
 Train from pre-trained model.
 Select a dataset and hit train.
 
+-----
+
 [ Targets ]
 
 Targets should be specified one per line in the folowing format
@@ -116,6 +127,7 @@ Similiary the same target event can be used across multiple different object nam
     car:1:50
     car:2:99
 
+-----
 
 [ Target Events ]
 
@@ -224,6 +236,7 @@ Note that an import was not necessary but can be included.
 Limitless and very simple however a plugin can be as advanced & sophisticated as
 you like, imagine or require.
 
+-----
 
 [ GUI ]
 
@@ -239,6 +252,7 @@ you like, imagine or require.
     CL: Clear all object annotations for the current image.
     RM: Remove annotation for the currently selected object.
 
+-----
 
 [ Bugs ]
 
@@ -246,12 +260,15 @@ BETA stage however application is mostly stable and will
 require crash testing to make more stable by finding issues as
 they arise, are found.
 
+-----
 
 [ Versions ]
 
     Python: 3.7.
     ImageAI: Uses old Imageai backend.
     Plugins: Should be made to be compaitble with Python 3.7.
+
+-----
 
 [ Creator ]
 
@@ -265,6 +282,10 @@ they arise, are found.
     Source code may be available on request however not many things auto-annotate
     and if they do they cost money and i really need money.
 
+-----
+
 [ PayPal ]
     
     benjaminjc173@gmail.com :)
+
+-----
