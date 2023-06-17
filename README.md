@@ -9,12 +9,12 @@ detection in videos and live camera feeds. Detection, auto-annotation, manual an
 
     Plug & play object detection and auto annotation from live camera feeds.
     Target detection with half a million fully programmable target events for infinitely specified targets.
-    Created data-sets can be used to further mannual annotation and be trained on.
+    Created data-sets can be used for further mannual annotation and be trained on.
 
 
 [ Video ]
 
-    Object detection and auto annotation from video files to create data-sets that can be used to further mannual
+    Object detection and auto annotation from video files to create data-sets that can be used for further mannual
     annotation and be trained on.
 
 
@@ -183,7 +183,7 @@ detection in videos and live camera feeds. Detection, auto-annotation, manual an
     os.startfile('cmd')
 
     Note that an import was not necessary.
-    Limitless and and very simple however a plugin can be as advanced, sophisticated as you like or require.
+    Limitless and very simple however a plugin can be as advanced, sophisticated as you like or require.
 
 
 [ GUI ]
