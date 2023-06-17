@@ -1,9 +1,11 @@
 Detectionator (Object Detection Studio using ImageAI)
 
 
-Object Detection Studio leverages a highly modified and upgraded version of the original ImageAI to facilitate image
-detection in videos and live camera feeds. Detection, auto-annotation, manual annotation, training.
-Teach it what anything is even aliens and UAPs and setup corresponding target events.
+Object Detection Studio leverages a highly modified and upgraded version of the
+original ImageAI to facilitate image detection in videos and live camera feeds.
+
+Detection, auto-annotation, manual annotation, training. Teach it what anything
+is, even aliens and UAPs and setup corresponding target events.
 
 Download: https://drive.google.com/drive/folders/1wAuqcOAUPCxYI9UWFH4erdGI21U_LVY6?usp=sharing
 
@@ -11,41 +13,52 @@ Download: https://drive.google.com/drive/folders/1wAuqcOAUPCxYI9UWFH4erdGI21U_LV
 [ Camera ]
 
     Plug & play object detection and auto annotation from live camera feeds.
-    Target detection with half a million fully programmable target events for infinitely specified targets.
-    Created data-sets can be used for further mannual annotation and be trained on.
+    Target detection with half a million fully programmable target events for
+    infinitely specified targets.
+    Created data-sets can be used for further mannual annotation and training.
 
 
 [ Video ]
 
-    Object detection and auto annotation from video files to create data-sets that can be used for further mannual
-    annotation and be trained on.
+    Object detection and auto annotation from video files to create data-sets
+    that can be used for further mannual annotation and training.
 
 ![plot](./Screenshots/Video2.png)
 
 
 [ Annotation ]
 
-    Annotate a single image file. (Select a file).
-    Annotate a directory of image files. (Select a directory containing images).
-    Edit existing annotation files in a dataset. (Select a directory containing annotation & images directories).
-    If the dataset was created by this software's auto-annotator, then in Annotation open image directory as the
-    location created during auto-annotation, directory 'auto'.
+    A. Annotate a single image file. (Select a file).
 
-    Existing annotation(s) will be loaded in with the corresponding images and displayed with bounding boxes. The
-    existing object name(s) can be edited/removed and new objects can be added.
+    B. Annotate a directory of image files. (Select a directory containing images).
 
-    Be sure to set the save location to the annotation directory for the image directory being annotated.
+    C. Edit existing annotation files in a dataset. (Select a directory containing
+    annotation & images directories).
+
+    If the dataset was created by this software's auto-annotator, then in Annotation
+    open image directory as the location created during auto-annotation, directory 'auto'.
+
+    Existing annotation(s) will be loaded in with the corresponding images and displayed
+    with bounding boxes. The existing object name(s) can be edited/removed and new objects
+    can be added too.
+
+    Be sure to set the save location (File -> Save Location) to the annotation directory
+    for the image directory being annotated.
 
 ![plot](./Screenshots/Annotate2.png)
+
+    Existing auto/previously annotated objects can be renamed or removed entirely and new
+    objects can be annotated too.
 
 
 [ Training ]
 
-    Ensure dataset directory structure is correct before initiating training. Auto annotation will not create
-    the training/validation directory for you, only annotation and images directories which would have to be
-    split approximately 70+% training and 30+% validation.
-    Ensure datasets are accurate either because a dataset not created by this program is trusted or because a dataset
-    created by this program has been manually checked/annotated.
+    Ensure dataset directory structure is correct before initiating training. Auto annotation
+    will not create the training/validation directory for you, only annotation and images
+    directories which would have to be split approximately 70+% training and 30+% validation.
+
+    Ensure datasets are accurate either because a dataset not created by this program is
+    trusted or because a dataset created by this program has been manually checked/annotated.
 
     Directory containing dataset should be in the following structure:
     
@@ -73,18 +86,21 @@ Download: https://drive.google.com/drive/folders/1wAuqcOAUPCxYI9UWFH4erdGI21U_LV
 
 [ Targets ]
 
-    Targets should be specified one per line in the folowing format objectname:targetevent:probability:
+    Targets should be specified one per line in the folowing format
+    objectname:targetevent:probability:
     person:1:50
     car:2:50
-    This will run target event 1 if a person is detected with at least a 50% percentage probability.
+    This will run target event 1 if a person is detected with at least a 50% percentage
+    probability.
     
     Multiple target events can be assigned to a single object nameas follows:
     person:1:50
     person:2:99
     car:3:50
     car:4:99
-    This will run target event 1 if a person is detected with at least a 50% percentage probability AND
-    run target event 2 if percentage probability is equal to or greater than 99%. (Same for car).
+    This will run target event 1 if a person is detected with at least a 50% percentage
+    probability AND run target event 2 if percentage probability is equal to or greater
+    than 99%. (Same for car).
 
     Similiary the same target event can be used accross multiple different object names:
     person:1:50
@@ -96,16 +112,19 @@ Download: https://drive.google.com/drive/folders/1wAuqcOAUPCxYI9UWFH4erdGI21U_LV
 [ Target Events ]
 
     A minimal knowledge of python is required to write a target event.
-    Target events utilize exec() and compile() so that once this program is itself compiled, python is not
-    required to create, compile and execute new target events.
 
-    A target event can be written in python in an IDE or even a notepad and can do literally anything you like in python,
-    passively/non-passively to/about the target.
-    Some modules are included to compliment exec() and comile(), this makes any new plugin potentially far
-    more powerful and even easier to create for potentially any event and without needing python installed. (Python
-    included).
+    Target events utilize exec() and compile() so that once this program is itself
+    compiled, python is not required to create, compile and execute new target events.
 
-    Lock onto anything (even newly trained objects) --> triggers target event(s) (that can do potentially anything).
+    A target event can be written in python in an IDE or even a notepad and can do
+    literally anything you like in python, passively/non-passively to/about the target.
+
+    Some modules are included to compliment exec() and comile(), this makes any new
+    plugin potentially far more powerful and even easier to create for potentially any
+    event and without needing python installed. (Python included).
+
+    Lock onto anything (even newly trained objects) --> triggers target event(s)
+    (that can do potentially anything).
 
     Included for application functionality:
     import os
@@ -187,12 +206,13 @@ Download: https://drive.google.com/drive/folders/1wAuqcOAUPCxYI9UWFH4erdGI21U_LV
     import win32process
     import win32clipboard
 
-    Example event in example.py (does not have to be a .py file, only requires the file contains functioning python
-    code):
+    Example event in example.py (does not have to be a .py file, only requires the
+    file contains functioning python code):
     os.startfile('cmd')
 
-    Note that an import was not necessary.
-    Limitless and very simple however a plugin can be as advanced, sophisticated as you like or require.
+    Note that an import was not necessary but can be included.
+    Limitless and very simple however a plugin can be as advanced & sophisticated as
+    you like, imagine or require.
 
 
 [ GUI ]
@@ -226,10 +246,11 @@ Download: https://drive.google.com/drive/folders/1wAuqcOAUPCxYI9UWFH4erdGI21U_LV
 [ Creator ]
 
     Written by Benjamin Jack Cullen
-    Although this software uses a highly modified and upgraded ImageAI it is thanks to ImageAI that this
-    software exists at all and my mods/upgrades are simple in comparison and exist only to allow for more
-    functionality in specific areas of ImageAI.
-    All rights reserved however source code may be available on request however not many things auto-annotate
+    Although this software uses a highly modified and upgraded ImageAI it is
+    thanks to ImageAI that this software exists at all and my mods/upgrades are
+    simple in comparison and exist only to allow for more functionality in
+    specific areas of ImageAI.
+    Source code may be available on request however not many things auto-annotate
     and if they do they cost money and i really need money.
 
     paypal: benjaminjc173@gmail.com :)
