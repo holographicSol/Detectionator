@@ -68,20 +68,20 @@ Directory containing dataset should be in the following structure:
 
                      |--------------> annotations
                  train
-                 |   |--------------> class images
+                 |   |--------------> images
     hololens --->
                  |   |--------------> annotations
                 validation
-                     |--------------> class images
+                     |--------------> images
     
     
                      |--------------> annotations
                  train
-                 |   |--------------> class images
+                 |   |--------------> images
     oculus ----->
                  |   |--------------> annotations
                 validation
-                     |--------------> class images
+                     |--------------> images
 
 Train from scratch.
 Train from pre-trained model.
