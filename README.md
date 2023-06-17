@@ -26,6 +26,8 @@ Download: https://drive.google.com/drive/folders/1wAuqcOAUPCxYI9UWFH4erdGI21U_LV
     Annotate a single image file. (Select a file).
     Annotate a directory of image files. (Select a directory containing images).
     Edit existing annotation files in a dataset. (Select a directory containing annotation & images directories).
+    If the dataset was created by this software's auto-annotator, then in Annotation open image directory as the
+    location created during auto-annotation, directory 'auto'.
 
     Existing annotation(s) will be loaded in with the corresponding images and displayed with bounding boxes. The
     existing object name(s) can be edited/removed and new objects can be added.
