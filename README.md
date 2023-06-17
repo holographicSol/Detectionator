@@ -20,6 +20,8 @@ Download: https://drive.google.com/drive/folders/1wAuqcOAUPCxYI9UWFH4erdGI21U_LV
     Object detection and auto annotation from video files to create data-sets that can be used for further mannual
     annotation and be trained on.
 
+![plot](./Screenshots/Video2.png)
+
 
 [ Annotation ]
 
