@@ -1,8 +1,12 @@
 Detectionator (Object Detection Studio using ImageAI)
 
 
-Object Detection Studio leverages a highly modified and upgraded version of the
-original ImageAI to facilitate image detection in videos and live camera feeds.
+Detectionator is an Object Detection Studio for ImageAI, using a highly modified
+version of the original ImageAI.
+
+This software is a toolkit for training models annotating/auto-annotating images
+from videos/cameras and ultimately detection of objects with target events that
+can be triggered upon target detection using YOLOv3 or a custom model.
 
 Detection, auto-annotation, manual annotation, training. Teach it what anything
 is, even aliens and UAPs and setup corresponding target events.
