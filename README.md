@@ -48,7 +48,9 @@ C. Edit existing annotation files in a dataset. (Select a directory containing
 annotation & images directories).
 
 If the dataset was created by this software's auto-annotator, then in Annotation
-open image directory as the location created during auto-annotation, directory 'auto'.
+open image directory as the location created during auto-annotation, directory 'auto',
+auto is the directory that should be selected if opening a dataset for annotation,
+then this software will be able to find both images and annotation directories within.
 
 Existing annotation(s) will be loaded in with the corresponding images and displayed
 with bounding boxes. The existing object name(s) can be edited/removed and new objects
