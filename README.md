@@ -98,53 +98,38 @@ Train from scratch or train from pre-trained model, select a dataset and hit tra
 
 -----
 
-[ Targets ]
-
-Targets should be specified one per line in the folowing format
-    objectname:targetevent:probability:
-
-    person:1:50
-    car:2:50
-
-This will run target event 1 if a person is detected with at least a 50% percentage
-probability.
-
-Multiple target events can be assigned to a single object names follows:
-
-    person:1:50
-    person:2:99
-    car:3:50
-    car:4:99
-
-This will run target event 1 if a person is detected with at least a 50% percentage
-probability AND run target event 2 if percentage probability is equal to or greater
-than 99%. (Same for car).
-
-Similiary the same target event can be used across multiple different object names:
-
-    person:1:50
-    person:2:99
-    car:1:50
-    car:2:99
-
------
-
 [ Target Events ]
 
 A minimal knowledge of python is required to write a target event.
 
+![plot](./Screenshots/Target_Events.png)
+
+Welcome to the 'detenator' if you will...
+
+Either using YOLOv3 or a model traained on new objects it is ultimately time
+to setup target events.
+
 Target events utilize exec() and compile() so that once this program is itself
-compiled, python is not required to create, compile and execute new target events.
+compiled, python is not required to create, compile and execute new target events
+because Detectionator can execute raw python code. This makes writing plugins
+very simple and very powerful, even on the fly with no python installed.
 
 A target event can be written in python in an IDE or even a notepad and can do
-literally anything you like in python, passively/non-passively to/about the target.
+literally anything you like in python, passively/non-passively to/about a target.
 
-Some modules are included to compliment exec() and comile(), this makes any new
+Some modules are included to compliment exec() and compile(), this makes any new
 plugin potentially far more powerful and even easier to create for potentially any
-event and without needing python installed. (Python included).
+event and without needing python installed.
 
-Lock onto anything (even newly trained objects) --> triggers target event(s)
-(that can do potentially anything).
+Execution Modes:
+
+1: Run once when a target is detected.
+
+2: Run every time a target is detected.
+
+3: Run every time a target is detected providing previous execution completed.
+
+Ultimately, lock onto potentially anything --> triggers target event(s).
 
 Included for application functionality:
 
@@ -171,7 +156,8 @@ Included for application functionality:
     from imageai import Detection
     from imageai.Detection import Custom
     
-    Included specifically for exec() and compile():
+Included specifically for exec() and compile():
+
     import asyncbs4
     import aiohttp
     import asyncio
