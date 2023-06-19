@@ -106,7 +106,7 @@ A minimal knowledge of python is required to write a target event.
 
 Welcome to the 'detenator' if you will...
 
-Either using YOLOv3 or a model traained on new objects it is ultimately time
+Either using YOLOv3 or a model trained on new objects it is ultimately time
 to setup target events.
 
 Target events utilize exec() and compile() so that once this program is itself
