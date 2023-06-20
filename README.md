@@ -124,7 +124,7 @@ event and without needing python installed.
 The target event status (currently a green horizontal bar) intends to display
 status of process x running (running/not running) and should be green providing
 a process for the current target event is still running. The status does not
-reflect a target objet detected status, only associated process is running
+reflect a target object detected status, only associated process 'is running'
 status as an associated process (plugin/target_event) may take time to complete
 and or may be designed to never stop running, either case, process/plugin
 is running status is displayed.
