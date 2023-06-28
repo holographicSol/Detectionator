@@ -100,15 +100,12 @@ Train from scratch or train from pre-trained model, select a dataset and hit tra
 
 [ Target Events ]
 
-A minimal knowledge of python is required to write a target event.
+Welcome to the 'detenator' if you will...
 
 ![plot](./Screenshots/Target_Events.png)
 
-Welcome to the 'detenator' if you will...
-
 Either using YOLOv3 or a model trained on new objects it is ultimately time
-to setup target events. For performance reasons, currently a target event can be
-set as a file.
+to setup target events.
 
 Execution Modes:
 
