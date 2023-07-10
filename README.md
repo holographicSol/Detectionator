@@ -3,7 +3,7 @@ Detectionator (Object Detection Studio using ImageAI)
 -----
 
 Detectionator is an Object Detection Studio for ImageAI, using a highly modified
-version of the original ImageAI.
+version of the original ImageAI. I can take zero credits for ImageAI. 
 
 This software is a toolkit for training models annotating/auto-annotating images
 from videos/cameras and ultimately detection of objects with target events that
